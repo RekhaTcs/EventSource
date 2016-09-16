@@ -1,4 +1,5 @@
 var http = require('http');
+var bodyParser = require('body-parser');
 
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Transfer-Encoding': 'chunked', 'Content-Type': 'text/event-stream' });
